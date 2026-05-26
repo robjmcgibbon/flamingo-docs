@@ -58,14 +58,6 @@ Starting with HDF5 version 1.14.4, datasets with a :ref:`compression filter
 <faq_compression>` which compresses the data by more than 2x are flagged as problematic.
 This affects the following fields in the snapshots ``PartType0/MaximalTemperatures``, ``PartType0/ElectronNumberDensities``. The h5py python package does not currently support the option to disable this flag, so a version built with ``HDF5 < 1.14.4`` must be used.
 
-.. _issues_total_accreted_masses:
-
-Incorrect units for ``TotalAccretedMasses``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The field ``TotalAccretedMasses`` in the Jet & Jet_fgas-4σ runs have units of :math:`10^{10}\mathrm{M}_\odot` rather than :math:`10^{10} \mathrm{M}_\odot \mathrm{Mpc}^{-1} \mathrm{km/s}`. The stored values should be treated as if they did have the correct units.
-
-
 Halo catalogues
 ---------------
 
