@@ -75,6 +75,10 @@ html_theme = 'piccolo_theme'
 #     "banner_text": banner,
 # }
 
+html_theme_options = {
+    "banner_text": "This service will be at risk (likely down at times) from 1st to 5th June due to COSMA <a href='/flamingo/support/at_risk.html'>scheduled down time</a>",
+}
+
 # Immaterial
 #extensions = ["sphinx_immaterial"]
 #html_theme = 'sphinx_immaterial'
