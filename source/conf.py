@@ -51,32 +51,27 @@ html_theme = 'piccolo_theme'
 #    "globaltoc_collapse": False
 #}
 
-# # Scheduled Cosma down times
-# import datetime as dt
-# downtimes = (
-#     dt.date(2026, 6,  1),
-#     dt.date(2026, 10, 5),
-#     dt.date(2027, 2,  1),
-# )
-# next_downtime = None
-# for downtime in downtimes:
-#     nr_days = (downtime - dt.date.today()).days
-#     if nr_days < 21 and nr_days > -4:
-#         next_downtime = downtime
-#         break
-# if next_downtime:
-#     start_date = downtime.strftime("%d %B")
-#     end_date   = (downtime+dt.timedelta(days=4)).strftime("%d %B %Y")
-#     banner = "This service will be at risk from "+start_date+" to "+end_date+" due to COSMA <a href='/flamingo/support/at_risk.html'>scheduled down time</a>"
-# else:
-#     banner = None
-
-# html_theme_options = {
-#     "banner_text": banner,
-# }
+# Scheduled Cosma down times
+import datetime as dt
+downtimes = (
+    dt.date(2026, 10, 5),
+    dt.date(2027, 2,  1),
+)
+next_downtime = None
+for downtime in downtimes:
+    nr_days = (downtime - dt.date.today()).days
+    if nr_days < 21 and nr_days > -4:
+        next_downtime = downtime
+        break
+if next_downtime:
+    start_date = downtime.strftime("%d %B")
+    end_date   = (downtime+dt.timedelta(days=4)).strftime("%d %B %Y")
+    banner = "This service will be at risk from "+start_date+" to "+end_date+" due to COSMA <a href='/flamingo/support/at_risk.html'>scheduled down time</a>"
+else:
+    banner = None
 
 html_theme_options = {
-    "banner_text": "This service will be at risk (likely down at times) from 1st to 5th June due to COSMA <a href='/flamingo/support/at_risk.html'>scheduled down time</a>",
+    "banner_text": banner,
 }
 
 # Immaterial
