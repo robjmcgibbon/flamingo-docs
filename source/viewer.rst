@@ -11,7 +11,7 @@ File browser
 .. raw:: html
 
     </div>
-    <div class="viewer" id="content"></div>
+    <div class="viewer" id="viewercontent"></div>
     <script type="module">
          import { viewer_onload } from "./_static/viewer.js";
          window.addEventListener('load', viewer_onload);

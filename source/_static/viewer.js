@@ -238,7 +238,7 @@ function format_attribute_value(object) {
 // Replace the contents of the main display with the supplied element tree
 function display_content(node) {
 
-    const oldContent = document.getElementById("content");
+    const oldContent = document.getElementById("viewercontent");
     const newContent = document.createElement("div");
     newContent.className = oldContent.className;
     newContent.id = oldContent.id;
