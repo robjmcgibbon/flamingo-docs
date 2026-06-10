@@ -10,10 +10,13 @@ in python. Here, we provide links to these examples.
     specified region, and save part of a snapshot to a local file
     </snapshots/swiftsimio>`
 
+  * :doc:`Read SOAP halo properties using swiftsimio</soap/swiftsimio>`
+
+  * :doc:`Identify a halo of interest and read in the particles
+    belonging to it </snapshots/halo_particles>`
+
   * :doc:`Read and plot the matter power spectrum at several redshifts
     </power_spectra>`
-
-  * :doc:`Read SOAP halo properties using swiftsimio</soap/swiftsimio>`
 
   * :doc:`Identify the same halo between different simulations </soap/soap_matching>`
 
