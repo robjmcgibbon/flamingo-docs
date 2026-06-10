@@ -16,6 +16,9 @@ The latter method might be preferable if you only need a small
 fraction of the data, such as a subset of halo properties or halos in
 a small region of interest.
 
+To read the particles associated with a halo selected from a SOAP
+catalogue, see :doc:`/snapshots/halo_particles`.
+
 Installation
 ------------
 
