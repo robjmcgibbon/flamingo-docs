@@ -90,7 +90,7 @@ directly with h5py. Both methods are illustrated below.
          import swiftsimio as sw
 
          # Open the z=0 halo catalogue from the L1_m10_DMO simulation
-         soap_file = "FLAMINGO/L1_m10/L1_m10_DMO/SOAP-HBT/halo_properties_0077.hdf5"
+         soap_file = "./FLAMINGO/L1_m10/L1_m10_DMO/SOAP-HBT/halo_properties_0077.hdf5"
          soap = sw.load(soap_file)
 
          # Get halo positions, masses and indexes
