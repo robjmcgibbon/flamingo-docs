@@ -1,10 +1,10 @@
 Reading particles belonging to a halo
 =====================================
 
-Here we show how to identify a halo of interest in the SOAP halo
-catalogue and then find its particles in the corresponding
-snapshot. This could be used to compute a halo density profile, for
-example.
+Here we show how to identify a halo of interest in a :doc:`SOAP halo
+catalogue </soap/index>` and then find its particles in the
+corresponding :doc:`snapshot </snapshots/index>`. This could be used
+to compute a halo density profile, for example.
 
 In the SOAP halo catalogues, each halo is assigned an index which is
 unique within the snapshot (but not between snapshots). This index is
