@@ -4,6 +4,10 @@ Known issues
 This page tracks known technical issues related to the data products.
 It will be updated as new issues are discovered.
 
+  * 2026-07-08: An issue has been identified which affects the
+    ``TotalMass`` and ``NeutrinoMass`` HEALPix maps in several
+    runs. See :ref:`issues_neutrino_maps` for details.
+
 .. contents::
    :local:
    :backlinks: none
@@ -153,6 +157,31 @@ Figures showing the fraction of haloes which are affected at redshift :math:`z=0
 
 HEALpix maps
 ------------
+
+.. _issues_neutrino_maps:
+
+Incorrect neutrino and total mass maps
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The neutrino and total mass HEALPix maps for certain simulations were
+incorrect in the initial data release. The neutrino mass in each pixel
+consists of a background density plus perturbations represented by
+particles. A correction to the background density had been
+accidentally applied twice in a few cases. The affected runs are:
+
+  * PlanckNu0p48Fix
+  * PlanckNu0p48Fix_DMO
+  * PlanckDCDM12
+  * PlanckDCDM12_DMO
+  * PlanckDCDM24
+  * PlanckDCDM24_DMO
+
+The affected maps are easily identified because almost all of the
+``NeutrinoMass`` pixel values are negative. In these cases the
+``TotalMass`` map is underestimated too.
+
+As of 2026-07-08, all of these maps have been replaced with corrected
+versions.
 
 .. _issues_dispersion_measure:
 
