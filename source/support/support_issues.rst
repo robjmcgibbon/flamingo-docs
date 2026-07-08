@@ -4,9 +4,15 @@ Known issues
 This page tracks known technical issues related to the data products.
 It will be updated as new issues are discovered.
 
+Issues identified after the initial release
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
   * 2026-07-08: An issue has been identified which affects the
     ``TotalMass`` and ``NeutrinoMass`` HEALPix maps in several
     runs. See :ref:`issues_neutrino_maps` for details.
+
+Full list of known issues
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. contents::
    :local:
