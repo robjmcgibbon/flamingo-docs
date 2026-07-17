@@ -222,7 +222,7 @@ snapshot on the server.
          import unyt as u
          cMpc = sw.cosmo_quantity(1.0, u.Mpc, comoving=True, scale_factor=mask.metadata.a, scale_exponent=1)
 
-         # Define the region to read
+         # Define the region to read in comoving Mpc
          load_region = [[100*cMpc, 150*cMpc], [100*cMpc, 150*cMpc], [100*cMpc,150*cMpc]]
 
          # Constrain the region to read
