@@ -172,6 +172,10 @@ Spatial masking can be used to read in just part of a local snapshot
 which you have downloaded, or to download just part of a remote
 snapshot on the server.
 
+.. note:: This example has been updated (on 2026-07-17) because
+          swiftsimio now requires the coordinates to cut out to be
+          specified as a cosmo_array object.
+
 .. tab-set::
 
    .. tab-item:: Using a remote file
