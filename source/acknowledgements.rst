@@ -9,7 +9,7 @@ Publications making use of the public FLAMINGO data are kindly requested to:
     and `Kugel et al (2023)
     <https://ui.adsabs.harvard.edu/abs/2023MNRAS.526.6103K/abstract>`__,
     as well as the data release paper, `Helly et al (2026)
-    <https://arxiv.org/abs/2604.24324>`__.
+    <https://ui.adsabs.harvard.edu/abs/2026A%26C....5701159H/abstract>`__.
   * When referring to specific aspects of the methodology, cite the original papers presenting those aspects rather than the overview paper.
   * Add the following statement to the acknowledgements:
 
