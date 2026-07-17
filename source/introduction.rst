@@ -8,7 +8,7 @@ simulations <https://flamingo.strw.leidenuniv.nl/>`__ described in
 and `Kugel et al (2023)
 <https://ui.adsabs.harvard.edu/abs/2023MNRAS.526.6103K/abstract>`__.
 The FLAMINGO data release is presented in `Helly et al (2026)
-<https://arxiv.org/abs/2604.24324>`__.
+<https://ui.adsabs.harvard.edu/abs/2026A%26C....5701159H/abstract>`__.
 
 FLAMINGO simulation data products
 ---------------------------------
