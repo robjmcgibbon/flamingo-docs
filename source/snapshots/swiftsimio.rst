@@ -22,7 +22,7 @@ Installation
 
 The swiftsimio module can be installed as follows::
 
-  pip install swiftsimio
+  pip install swiftsimio>=12.1.4
 
 For remote access to snapshots we also need the hdfstream module::
 
@@ -190,9 +190,12 @@ snapshot on the server.
          import swiftsimio as sw
          mask = sw.mask(remote_snapshot)
 
-         # Define the region to read
-         from unyt import Mpc
-         load_region = [[100*Mpc, 150*Mpc], [100*Mpc, 150*Mpc], [100*Mpc,150*Mpc]]
+         # Define a comoving Mpc unit (this will be simplified in an upcoming swiftsimio version)
+         import unyt as u
+         cMpc = sw.cosmo_quantity(1.0, u.Mpc, comoving=True, scale_factor=mask.metadata.a, scale_exponent=1)
+
+         # Define the region to read in comoving Mpc
+         load_region = [[100*cMpc, 150*cMpc], [100*cMpc, 150*cMpc], [100*cMpc,150*cMpc]]
 
          # Constrain the region to read
          mask.constrain_spatial(load_region)
@@ -215,9 +218,12 @@ snapshot on the server.
          import swiftsimio as sw
          mask = sw.mask(filename)
 
+         # Define a comoving Mpc unit (this will be simplified in an upcoming swiftsimio version)
+         import unyt as u
+         cMpc = sw.cosmo_quantity(1.0, u.Mpc, comoving=True, scale_factor=mask.metadata.a, scale_exponent=1)
+
          # Define the region to read
-         from unyt import Mpc
-         load_region = [[100*Mpc, 150*Mpc], [100*Mpc, 150*Mpc], [100*Mpc,150*Mpc]]
+         load_region = [[100*cMpc, 150*cMpc], [100*cMpc, 150*cMpc], [100*cMpc,150*cMpc]]
 
          # Constrain the region to read
          mask.constrain_spatial(load_region)
