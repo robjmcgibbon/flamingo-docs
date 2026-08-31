@@ -1494,7 +1494,7 @@ Copied properties
           * **Compression:** no compression
      - basic
      - \-
-     - TrackId of the descendant of this subhalo.
+     - TrackId of the descendant of this subhalo. See `[27] <footnote-27_>`_
    * - .. dropdown:: ``input_halos_hbtplus.host_fofid``
 
           * **HDF5 name:** ``InputHalos/HBTplus/HostFOFId``
@@ -2024,4 +2024,9 @@ of Trayford et al. (2015). The luminosities are given in dimensionless
 units. They have been divided by 3631 Jy already, i.e. they can be turned
 into absolute AB-magnitudes (rest-frame absolute maggies) directly by
 applying -2.5 log10(L) without additional corrections.
+
+.. _footnote-27:
+
+**[27]** HBT only assigns the DescendantTrackId value at the snapshot when a subhalo becomes an orphan. However, the SOAP catalogues only contain subhalos which are
+resolved at the current snapshot. Therefore in order to get the descendant of a disrupted object the HBT catalogues must be used.
 
